@@ -1,0 +1,167 @@
+LAB2 PROMPT
+
+Laboratory Programming Exercise 02
+
+Computer Engineering 160
+
+Fall 2018
+
+C. Paolini
+
+ 
+
+During the lecture you saw the program generated from the GuessNumber.c code from the textbook always selected the same “random” number, each time you invoked the executable.  For this laboratory exercise, download the GuessNumber.c file from BlackBoard and create a new C project in Eclipse (C Managed Build) and use the GuessNumber.c file as the project source file.  Compile the GuessNumber.c file using Eclipse but invoke the generated executable from a Cygwin64 Terminal if you are on a Windows station, the Terminal app if you are on a Mac, or an xterm if you are on a Linux station.  The first time you invoke the GuessNumber executable, proceed through the guessing game until you guess the correct number.  Once you finally do guess the correct number, chose to end the program, and then re-launch the executable.  Observe that each time you launch the executable, the same “random” number is chosen.  Example:
+
+ 
+
+Christopher Paolini@virtue ~/eclipse-workspace/GuessNumber/Debug
+
+$ ./GuessNumber.exe
+
+I have a number between 1 and 1000.
+
+Can you guess my number?
+
+Please type your first guess.
+
+? 500
+
+Too low. Try again.
+
+? 750
+
+Too low. Try again.
+
+? 875
+
+Too low. Try again.
+
+? 938
+
+Too high. Try again.
+
+? 907
+
+Too low. Try again.
+
+? 923
+
+Too low. Try again.
+
+? 931
+
+Too low. Try again.
+
+? 935
+
+Too high. Try again.
+
+? 933
+
+Too low. Try again.
+
+? 934
+
+ 
+
+Excellent! You guessed the number!
+
+Would you like to play again?
+
+Please type ( 1=yes, 2=no )? 2
+
+ 
+
+ 
+
+Christopher Paolini@virtue ~/eclipse-workspace/GuessNumber/Debug
+
+$ ./GuessNumber.exe
+
+I have a number between 1 and 1000.
+
+Can you guess my number?
+
+Please type your first guess.
+
+? 934
+
+ 
+
+Excellent! You guessed the number!
+
+Would you like to play again?
+
+Please type ( 1=yes, 2=no )? 2
+
+ 
+
+ 
+
+Christopher Paolini@virtue ~/eclipse-workspace/GuessNumber/Debug
+
+$ ./GuessNumber.exe
+
+I have a number between 1 and 1000.
+
+Can you guess my number?
+
+Please type your first guess.
+
+? 934
+
+ 
+
+Excellent! You guessed the number!
+
+Would you like to play again?
+
+Please type ( 1=yes, 2=no )? 2
+
+ 
+
+ 
+
+Christopher Paolini@virtue ~/eclipse-workspace/GuessNumber/Debug
+
+$
+
+ 
+
+Look through the GuessNumber.c source code and find where the
+
+ 
+
+srand( time( 0 ) )
+
+ 
+
+function is referenced.  Consult the online The C Library Reference Guide hosted at the University of Illinois, accessible via URL https://www-s.acm.illinois.edu/webmonkeys/book/c_guide/, for a description of the srand()and time() functions.  Your task is to “fix” the GuessNumber.c source code so the program guesses a different “random” number each time the executable is invoked.
+
+ 
+
+Generate a screen capture of your Eclipse IDE workspace, showing the relevant section of code you modified, and the output of two invocations of your program in the terminal.  Under Microsoft Windows, press the Windows Key and the PrtScr key, simultaneously, and move the generated image file in Pictures\Screenshots to your Eclipse IDE project folder.  On macOS, Shift-Command (?)-3 will take a screenshot of the screen and save the screenshot as a .png file on your desktop. See article https://support.apple.com/en-us/HT201361 for instructions on how to take a screenshot on a Mac.
+
+ 
+
+Please name your Eclipse IDE project
+
+ 
+
+            Lastname_REDID_Lab_02
+
+ 
+
+Your project folder will be found in your eclipse-workspace directory.  For example, in the Windows environment, the path will resemble
+
+ 
+
+C:\Users\Christopher Paolini\eclipse-workspace\Paolini_807456566_Lab_02
+
+ 
+
+Note that your executable will be found in the Debug directory within your project directory and will be named Lastname_REDID_Lab_02.exe.
+
+ 
+
+Create a ZIP file of your project folder (i.e. your Lastname_REDID_Lab_02 folder) and submit the ZIP file through Blackboard.
