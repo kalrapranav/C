@@ -1,0 +1,43 @@
+LAB3 PROMPT
+
+Laboratory Programming Exercise 03
+
+Computer Engineering 160
+
+Fall 2018
+
+C. Paolini
+
+During the lecture, and from programming assignment 02, you saw how the scanf() function can be used to prompt the user to enter an integer.  To prompt for a floating point value, such as 3.14, use
+
+     scanf("%f", &x);
+
+to capture a real number from the standard input device (e.g. the keyboard) and store the value into a float variable x:  
+
+     float x;
+
+Your task for this assignment is to prompt the user to enter one floating point number and output the value of the standard logistic function applied to the input number.  The logistic function is defined as
+
+                         L
+
+     f(x) = ----------------------
+
+               1 + e^(-k(x - x0))
+
+The "standard" logistic function has default parameters k = 1.0, x0 = 0.0, and L = 1.0.  The exponential function e^(-x) is implemented using the C standard library function exp().  Note that you will need to include the math header file in order to use the exp() function:
+
+ #include <math.h>
+
+Develop a code to prompt for x and output "standard" logistic function of x.  
+
+The standard logistic function is used in data analytics to assign a probability value to a set of predictors, and in machine learning to map an input signal x into the range [0,1].  See the attached function plot.
+
+In your output, show the values for logistic(0.0), logistic(10.0), and logistic(-10.0).  Question: for which (approximate) minimum value of positive x does the logistic function converge to 1, as shown in your output?  For which (approximate) maximum value of -x does the logistic function converge to 0?  Explain your answer in the comment block of your code.
+
+Be cognizant of operator precedence while developing your code, as we discussed in class.  All variables should be declared as float.
+
+Please name your Eclipse IDE project 
+
+ Lastname_REDID_Lab_03
+
+Create a ZIP file of your project folder (i.e. your Lastname_REDID_Lab_03 folder) and submit the ZIP file through Blackboard.
