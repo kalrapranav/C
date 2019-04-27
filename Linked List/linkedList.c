@@ -20,7 +20,7 @@
 **    Algorithm:  Iterative structure to create and assign values to the list
 **
 **      Caveats:  Describe any known program bugs or limitations.
-**      Version:  1.0
+**      Version:  1.0.0
 **
 */
 #include <stdio.h>
